@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/spring-context.xsd">
+
+	<bean class="com.wiley.SpringCore.Student" name="wileyStudent1">
+		<property name="studentId" value="2001" />
+
+		<property name="studentName" value="aiuwnd" />
+		<property name="studentAddress" value="delhi" />
+
+	</bean>
+
+	<bean
+		class="com.wiley.SpringCore.Student"
+		name="wileyStudent2"
+		p:studentId="1001"
+		p:studentName="kdb"
+		p:studentAddress="goa"
+	>
+	</bean>
+
+	<bean name="student1" class="com.wiley.SpringCore.Student">
+		<property name="studentId" value="1" />
+		<property name="studentName" value="John Doe" />
+		<property name="studentAddress" value="123 Main St" />
+		<property name="subjects">
+			<list>
+				<value>Math</value>
+				<value>Science</value>
+				<value>English</value>
+			</list>
+		</property>
+	</bean>
+	<bean name="student2" class="com.wiley.SpringCore.Student">
+		<property name="studentId" value="1" />
+		<property name="studentName" value="John Doe" />
+		<property name="studentAddress" value="123 Main St" />
+		<property name="hobbies">
+			<set>
+				<value>Cooking</value>
+				<value>Reading</value>
+				<value>Painting</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean name="student3Address" class="com.wiley.SpringCore.Address">
+		<property name="address" value="America" />
+	</bean>
+	
+
+	<bean name="student3" class="com.wiley.SpringCore.Student">
+		<property name="studentId" value="1" />
+		<property name="studentName" value="John Doe" />
+		<property name="studentAddress" >
+			<ref bean="student3Address" />
+		</property>
+		<property name="grades">
+			<props>
+				<prop key="Math">A</prop> 
+				<prop key="Science">B</prop> 
+				<prop key="English">C</prop> 
+			</props>
+		</property>
+	</bean>
+	
+	
+	
+</beans>
+ 

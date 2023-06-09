@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.guestlist{
+    width: 50%;
+    list-style-type: none;
+}
+
+.guestlist li{
+    background-color: wheat;
+    padding: 1rem ;
+    color:rgb(35, 0, 123);
+    margin-bottom: 1rem;
+}
+
+.guestlist li:hover{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.guestlist li:active{
+    background-color: rgb(35, 0, 123);
+    color:wheat;
+}
+
+.guestlist li.selected{
+    background-color: rgb(35, 0, 123);
+    color:wheat;
+}

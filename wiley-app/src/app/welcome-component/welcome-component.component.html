@@ -1,0 +1,12 @@
+<div class="py-3 ps-4">
+  <h4>Guests</h4>
+  <ul *ngFor="let guest of guests" class="guestlist">
+    <li [class.selected]="guest === selectedGuest" (click)="onClick(guest)">
+      <p>{{ guest.id }} - {{ guest.name | uppercase }}</p>
+    </li>
+  </ul>
+
+  <div *ngIf="selectedGuest">
+    <p>{{ selectedGuest.name }}</p>
+  </div>
+</div>

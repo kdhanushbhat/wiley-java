@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding:0;
+    width: 90%;
+    margin:auto;
+    border:1px solid black;
+}
+h1{
+    color:rebeccapurple;
+}
+.nav-list{
+    width: 50%;
+    margin: auto;
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding:1rem 0.2rem 1rem 0.2rem;
+}
+li a{
+    text-decoration: none;
+
+}
+header{
+    background-color: lightgreen;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+}
+aside{
+    text-align: start;
+    background-color: white;
+    color: darkgreen;
+    width: 40%;
+    padding: 2rem 1rem;
+    margin-left: 0.5rem;
+}
+.main{
+    background-color: white;
+    color: darkgreen;
+    border-width: 0px 1px 0px 0px ;
+    border-color: grey;
+    border-style: solid;
+    
+}
+footer{
+    padding: 8px;
+    text-align: center;
+}
+
