@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-productdetails',
@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./productdetails.component.css']
 })
 export class ProductdetailsComponent {
+  @Input() productDetails = ""
+  @Input() details = {
+    name: "",
+    type: "",
+    legalAge: 0,
+    rate: ""
+  }
+  @Output() event = new EventEmitter
+  message = "Okay mate!!"
+
+
+  callEvent() {
+    this.event.emit(this.message);
+  }
 
 }

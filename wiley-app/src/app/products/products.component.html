@@ -1,1 +1,9 @@
-<p>products works!</p>
+<div class="border border-primary p-5">
+  <h1>Parent</h1>
+  <app-productdetails
+    [productDetails]="productInfo"
+    [details]="product"
+    (event)="receiveEvent($event)"
+  ></app-productdetails>
+  <p *ngIf="childMessage">Message from child is: {{ childMessage }}</p>
+</div>

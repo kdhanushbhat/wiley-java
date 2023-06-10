@@ -4,10 +4,12 @@ import { WelcomeComponentComponent } from './welcome-component/welcome-component
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductsComponent } from './products/products.component';
 import { AppComponent } from './app.component';
+import { TasksComponent } from './components/tasks/tasks.component';
 
 const routes: Routes = [
   { path: "", component: WelcomeComponentComponent },
   { path: "product", component: ProductsComponent },
+  { path: "tasks", component: TasksComponent },
   { path: "products", redirectTo: 'product' },
   { path: '**', component: PageNotFoundComponent }
 ];

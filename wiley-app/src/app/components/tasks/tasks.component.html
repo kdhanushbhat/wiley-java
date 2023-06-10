@@ -1,0 +1,8 @@
+<div>
+  <h3 class="my-3 ms-5">Tasks</h3>
+  <ul *ngFor="let task of tasks" class="taskList">
+    <li>
+      <app-task-item [task]="task"></app-task-item>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,8 @@
+.task{
+    padding: 0;
+    margin: 0;
+}
+
+.task:hover{
+    text-decoration: underline;
+}
