@@ -1,1 +1,9 @@
-<p>header works!</p>
+<header>
+  <h2>{{ title }}</h2>
+  <app-button
+    *ngIf="hasRoute('/tasks')"
+    color="{{ showAddTask ? 'red' : 'green' }}"
+    text="{{ showAddTask ? 'Close' : 'Add' }}"
+    (btnClick)="toggleTask()"
+  ></app-button>
+</header>
