@@ -18,6 +18,7 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { AboutComponent } from './components/about/about.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TaskDetailsComponent } from './components/task-details/task-details.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     TaskItemComponent,
     TasksComponent,
     AboutComponent,
+    TaskDetailsComponent,
 
   ],
   imports: [

@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
+import { TaskDetailsComponent } from './components/task-details/task-details.component';
 
 const routes: Routes = [
   { path: "", component: WelcomeComponentComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
     path: "tasks",
     component: TasksComponent
   },
+  { path: "task-details/:id", component: TaskDetailsComponent },
   { path: "products", redirectTo: 'product' },
   { path: '**', component: PageNotFoundComponent }
 ];

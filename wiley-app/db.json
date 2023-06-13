@@ -10,13 +10,13 @@
       "id": 3,
       "text": "Angular App",
       "day": "June 13th at 1.30pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 4,
       "text": "Cloud",
       "day": "June 19th at 5.30pm",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 5,
