@@ -5,7 +5,9 @@
   (dblclick)="taskToggle(task)"
 >
   <h3>
-    <a routerLink="/task-details/{{ task.id }}"> {{ task.text }}</a>
+    <a routerLink="/task-details/{{ task.id }}">
+      {{ task.text | removeSpecial }}</a
+    >
     <fa-icon
       [ngStyle]="{ color: 'red' }"
       [icon]="faTimes"

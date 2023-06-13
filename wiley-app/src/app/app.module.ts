@@ -19,6 +19,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { AboutComponent } from './components/about/about.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskDetailsComponent } from './components/task-details/task-details.component';
+import { RemoveSpecialPipe } from './pipes/remove-special.pipe';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { TaskDetailsComponent } from './components/task-details/task-details.com
     TasksComponent,
     AboutComponent,
     TaskDetailsComponent,
+    RemoveSpecialPipe,
 
   ],
   imports: [
